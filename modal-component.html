@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easy js : modal component</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="theme-color" content="#42495B">
+
+</head>
+
+<body>
+
+
+
+    <div class="w3-container w3-row w3-padding">
+        <div class="side-wrapper w3-container w3-col m3 w3-hide-small">
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="content w3-container w3-col m9">
+            <div class="w3-display-container w3-padding-16 header-wrapper">
+
+            </div>
+
+
+            <div class="main " style="margin-top: 40px; line-height: 2.3em; font-size: 17px;">
+                <h1 class="w3-badge w3-round-medium w3-large  bg-1" style="padding: 5px 15px;">
+                    Modal Component
+                </h1>
+                <br>
+                <!-- <p>
+                    on this page you will learn how to use modal component perfectly
+                </p> -->
+
+                <h2>
+                    What IS Modal Component ?
+                </h2>
+
+                <p>
+                    The component modal is a powerful tool for creating custom modals. You can easily activate it with a
+                    few lines of code and create professional modals effortlessly. Building a modal normally comes with
+                    complexities, but with the Easy JS Modal component, you can easily create any modal.
+                </p>
+
+                <div class="w3-panel w3-text-teal w3-border w3-border-teal  w3-round-medium w3-padding">
+                    <p>
+                        note : In the examples below, I used the <b class="w3-border-bottom w3-border-teal" >
+                            <a href="https://www.w3schools.com/w3css/" target="_blank">W3CSS</a>
+                        </b> library to style the modals. You can use any other method to design
+                    </p>
+                </div>
+
+
+                <h3 class="w3-text-blue">
+                    # Basic Example
+                </h3>
+
+                <h4>
+                    Step One : make modal Body with HTML
+                </h4>
+                <pre><code class="language-html" data-prismjs="true">&lt;div class="mymodal w3-white w3-round-medium w3-center w3-xlarge w3-panel w3-padding-24" style="display: none;"&gt;
+    This IS A Basic Modal
+&lt;/div&gt;
+&lt;button class="mymodal-handler w3-button w3-medium w3-padding-small w3-black w3-round-medium"&gt;
+     open modal
+&lt;/button&gt;</code></pre>
+                <h4>
+                    Step Two : call Easy js Modal Component
+                </h4>
+                <pre><code class="language-javascript">import { EasyJS } from '/components/dist/easyjs.js'; 
+EasyJS.component('modal', {
+      wrapperClass: 'mymodal',
+      handlerClass: 'mymodal-handler',
+});</code></pre>
+
+
+
+
+                <h4>
+                    Finnaly : <button
+                        class="mymodal-handler w3-button w3-medium w3-padding-small w3-black w3-round-medium fw-normal">open
+                        modal</button>
+                </h4>
+
+
+
+                <h3 class="w3-text-blue">
+                    # Advanced Example
+                </h3>
+                <p>
+                    let make a modal with advanced options
+                </p>
+
+
+
+                <h4>
+                    Step One : make modal Body with HTML
+                </h4>
+                <pre><code class="language-html">&lt;div class="mymodal2 w3-display-container w3-white w3-round-medium w3-center w3-panel w3-padding-24"
+style="max-width: fit-content; display: none;"&gt;
+&lt;button
+class="closemodal w3-btn w3-pale-red w3-text-red w3-hover-red w3-round-large w3-cell w3-display-topright w3-margin"&gt;
+X
+&lt;/button&gt;
+&lt;h3&gt;
+This IS A Advanced Modal
+&lt;/h3&gt;
+&lt;p class="w3-large"&gt;
+In this example we have used more advanced settings
+&lt;/p&gt;
+&lt;button class="acceptModal w3-btn w3-pale-blue w3-text-blue w3-hover-blue w3-round-large w3-cell w3-margin-top"&gt;
+Accept
+&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+                <h4>
+                    Step Two : call Easy js Modal Component
+                </h4>
+
+                <pre><code class="language-javascript">import { EasyJS } from '/components/dist/easyjs.js'; 
+EasyJS.component('modal', {
+    wrapperClass: 'mymodal2',
+    handlerClass: 'mymodal-handler2',
+    closeButtonClass: 'closemodal',
+    acceptButtonClass: 'acceptModal',
+    position: 'top-center',
+    animationIn: 'fadeInDown',
+    animationOut: 'fadeOutUp',
+    animationSpeed: '0.7s',
+    onAccept: () => {
+        alert('accepted')
+      }
+});</code></pre>
+
+                <h4>
+                    Finnaly : <button
+                        class="mymodal-handler2 w3-button w3-medium w3-padding-small w3-black w3-round-medium fw-normal">open
+                        modal</button>
+                </h4>
+
+
+                <h3>
+                    Modal Component Options
+                </h3>
+
+                <p>
+                    on below part you can see total Modal Component Options
+                </p>
+
+                <section class="options w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-red fw-normal">
+                        @ Required Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>wrapperClass</b> : string () => modal wrapper class
+                        </li>
+                    </ul>
+                    <h4 class="w3-text-teal fw-normal">
+                        @ Optional Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>handlerClass</b> : string () => modal handler class
+                        </li>
+                        <li>
+                            <b>animationIn</b> : string (bounceIn) => modal animation in
+                        </li>
+                        <li>
+                            <b>animationOut</b> : string (bounceOut) => modal animation out
+                        </li>
+                        <li>
+                            <b>animationSpeed</b> : string (1s) => modal animation speed
+                        </li>
+                        <li>
+                            <b>closeByClickModal</b> : bool (true) => close modal when user clicked back modal
+                        </li>
+                        <li>
+                            <b>onOpen</b> : callback() => on open modal callback
+                        </li>
+                        <li>
+                            <b>onClose</b> : callback() => on close modal callback
+                        </li>
+                        <li>
+                            <b>onAccept</b> : callback() => on accept modal callback
+                        </li>
+                        <li>
+                            <b>position</b> : string (center) => modal position <b class="w3-text-blue">
+                                (center|top-center|top-left|top-right|bottom-center|bottom-left|bottom-right)
+                            </b>
+                        </li>
+                        <li>
+                            <b>acceptButtonClass</b> : string () => accept button class
+                        </li>
+                        <li>
+                            <b>closeButtonClass</b> : string () => close button class
+                        </li>
+                       
+
+                    </ul>
+                </section>
+
+                <section class="changelog w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-black fw-normal">
+                        @ Change Log
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                           ...
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ****************************************** preview start ****************************************** -->
+
+
+    <div class="mymodal  w3-white w3-round-medium w3-center w3-xlarge w3-panel w3-padding-24" style="display: none;">
+        This IS A Basic Modal</div>
+
+    <div class="mymodal2 w3-display-container w3-white w3-round-medium w3-center w3-panel w3-padding-24"
+        style="max-width: fit-content; display: none;">
+        <button
+            class="closemodal w3-btn w3-pale-red w3-text-red w3-hover-red w3-round-large w3-cell w3-display-topright w3-margin">
+            X
+        </button>
+        <h3>
+            This IS A Advanced Modal
+        </h3>
+        <p class="w3-large">
+            In this example we have used more advanced settings
+        </p>
+        <button class="acceptModal w3-btn w3-pale-blue w3-text-blue w3-hover-blue w3-round-large w3-cell w3-margin-top">
+            Accept
+        </button>
+    </div>
+
+
+
+    <script type="module">
+        import { EasyJS } from './easyjs/components/dist/easyjs.js'
+        EasyJS.debug('alert');
+        EasyJS.component('modal', {
+            wrapperClass: 'mymodal',
+            handlerClass: 'mymodal-handler',
+        });
+        EasyJS.component('modal', {
+            wrapperClass: 'mymodal2',
+            handlerClass: 'mymodal-handler2',
+            closeButtonClass: 'closemodal',
+            acceptButtonClass: 'acceptModal',
+            position: 'top-center',
+            animationIn: 'fadeInDown',
+            animationOut: 'fadeOutUp',
+            animationSpeed: '0.7s',
+            onAccept: () => {
+                alert('accepted')
+            }
+        });
+    </script>
+    <!-- ****************************************** preview end ****************************************** -->
+    <div class="side-mobile-wrapper w3-hide-large w3-hide-medium bg-2" style="margin-top: 30px; margin-bottom: -10px;">
+
+
+
+
+
+    </div>
+
+    <section class="footer-wrapper"></section>
+
+    <script src="assets/js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+</body>
+
+</html>

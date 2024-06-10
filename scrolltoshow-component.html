@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easy js : scroll to show component</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="theme-color" content="#42495B">
+
+</head>
+
+<body>
+
+
+
+    <div class="w3-container w3-row w3-padding">
+        <div class="side-wrapper w3-container w3-col m3 w3-hide-small">
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="content w3-container w3-col m9">
+            <div class="w3-display-container w3-padding-16 header-wrapper">
+
+            </div>
+
+
+            <div class="main " style="margin-top: 40px; line-height: 2.3em; font-size: 17px;">
+                <h1 class="w3-badge w3-round-medium w3-large  bg-1" style="padding: 5px 15px;">
+                    Scroll To Show Component
+                </h1>
+                <br>
+                <!-- <p>
+                    on this page you will learn how to use modal component perfectly
+                </p> -->
+
+                <h2 class="label-an">
+                    What IS Scroll To Show Component ?
+                </h2>
+
+                <p>
+                    With the Scroll To Show component, display page elements only when the user reaches them and make
+                    your page more attractive. It is set up with just a few lines of code and works well anywhere
+                </p>
+
+
+                <h4 class="label-an">
+                    call scroll to show Component
+                </h4>
+
+                <pre><code class="language-javascript">import { EasyJS } from '/components/dist/easyjs.js'; 
+    EasyJS.component('scrollToShow', {
+        targetElements: '.label-an',
+        animationDelay: '1s',
+        animationIn: 'fadeInUp',
+    });
+    EasyJS.component('scrollToShow', {
+        targetElements: 'pre , .scrollAreaNote',
+        animationIn: 'bounceIn',
+        animationSpeed: '2s',
+        threshold: 0.7,
+        animationDelay: '0.5s'
+    });
+    EasyJS.component('scrollToShow', {
+        targetElements: 'p',
+        animationIn: 'fadeIn',
+        animationSpeed: '6s'
+    });
+    EasyJS.component('scrollToShow', {
+        targetElements: 'section li',
+        animationIn: 'fadeInTopRight',
+});</code></pre>
+
+
+                <h4 class="label-an">
+                    How Its Work ?
+                </h4>
+
+                <p>
+                    Honestly, working with the SCROLL TO SHOW Component is easier than it seems, let me explain : <b>
+                        In the code above I create 4 scroll to show component, then with
+                        <span class="w3-text-red">
+                            targetElements
+                        </span>
+                        option select scroll to show targets.
+                    </b>
+                    (this page is animated with above code)
+                </p>
+
+
+                <h3 class="label-an">
+                    SO
+                </h3>
+
+                <p>
+                    The basic usage is something like this
+                </p>
+
+                <pre><code class="language-javascript">import { EasyJS } from '/components/dist/easyjs.js'; 
+EasyJS.component('scrollToShow', {
+   targetElements: '', // your target elements or target selectors
+});</code></pre>
+
+
+<h4 class="label-an">
+   Use onScreen And outScreen Callbacks
+</h4>
+
+<p>
+    These two help you manage the elements in the viewport carefully
+</p>
+
+<pre><code class="language-javascript">import { EasyJS } from '/components/dist/easyjs.js'; 
+EasyJS.component('scrollToShow', {
+    targetElements: 'p',
+    onScreen : function(element) {
+       element.style.background = 'green'; // set green when current element is in viewport
+    },
+    outScreen : function(element) {
+       element.style.background = 'red'; // set red when current element is out viewport
+    }
+});</code></pre>
+
+
+
+
+ 
+<div class="w3-panel w3-text-blue w3-border w3-border-blue  w3-round-medium w3-padding scrollAreaNote">
+    <p class="w3-blue w3-panel w3-padding w3-round-medium">
+        Usage <b>scrollArea</b> option Sometimes IS important !
+    </p>
+    <p class="w3-text-black" >
+        When the target elements are displayed in window, this works fine. However, if the target elements are located within an overflow area and the user needs to scroll to view them, you need to set the <b class="w3-text-red" >
+            scrollArea
+        </b> option according to your scroll area to ensure it works properly
+    </p>
+</div>
+                <h3 class="label-an">
+                    scroll to show Component Options
+                </h3>
+
+                <p>
+                    on below part you can see total scroll to show Component Options
+                </p>
+
+                <section class="options w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-red fw-normal">
+                        @ Required Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>targetElements</b> : string () => list of target elements or selectors
+                        </li>
+                    </ul>
+                    <h4 class="w3-text-teal fw-normal">
+                        @ Optional Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>threshold</b> : number (1) => threshold of target elements to show
+                        </li>
+                        <li>
+                            <b>animationIn</b> : string (fadeInDown) => target ELM animation in
+                        </li>
+                        <li>
+                            <b>animationOut</b> : string (fadeOut) => target ELM animation out
+                        </li>
+                        <li>
+                            <b>animationSpeed</b> : string (2s) => modal target ELM animation speed
+                        </li>
+                        <li>
+                            <b>animationDelay</b> : string (0s) => target ELM animation Delay
+                        </li>
+                        <li>
+                            <b>onScreen</b> : callback(TargetElement) => fired when target elements is inside viewport
+                        </li>
+                        <li>
+                            <b>outScreen</b> : callback(TargetElement) => fired when target elements is outside viewport
+                        </li>
+                        <li>
+                            <b>scrollArea</b> : element| window | object (winow.document) => viewport scroll area
+                        </li>
+                 
+
+
+                    </ul>
+                </section>
+
+                <section class="changelog w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-black fw-normal">
+                        @ Change Log
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            ...
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ****************************************** preview start ****************************************** -->
+
+
+    <script type="module">
+        import { EasyJS } from './easyjs/components/dist/easyjs.js'
+        EasyJS.debug('alert');
+        EasyJS.component('scrollToShow', {
+            targetElements: '.label-an',
+            animationDelay: '1s',
+            animationIn: 'fadeInUp',
+        });
+        EasyJS.component('scrollToShow', {
+            targetElements: 'pre , .scrollAreaNote',
+            animationIn: 'bounceIn',
+            animationSpeed: '2s',
+            threshold: 0.7,
+            animationDelay: '0.5s'
+        });
+        EasyJS.component('scrollToShow', {
+            targetElements: 'p',
+            animationIn: 'fadeIn',
+            animationSpeed: '6s'
+        });
+        EasyJS.component('scrollToShow', {
+            targetElements: 'section li',
+            animationIn: 'fadeInTopRight',
+        });
+
+        
+    </script>
+    <!-- ****************************************** preview end ****************************************** -->
+    <div class="side-mobile-wrapper w3-hide-large w3-hide-medium bg-2" style="margin-top: 30px; margin-bottom: -10px;">
+
+
+
+
+
+    </div>
+
+    <section class="footer-wrapper"></section>
+
+    <script src="assets/js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+</body>
+
+</html>

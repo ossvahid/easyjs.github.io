@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easy js : indicator component</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="theme-color" content="#42495B">
+
+</head>
+
+<body>
+
+
+
+    <div class="w3-container w3-row w3-padding">
+        <div class="side-wrapper w3-container w3-col m3 w3-hide-small">
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="content w3-container w3-col m9">
+            <div class="w3-display-container w3-padding-16 header-wrapper">
+
+            </div>
+
+
+            <div class="main " style="margin-top: 40px; line-height: 2.3em; font-size: 17px;">
+                <h1 class="w3-badge w3-round-medium w3-large  bg-1" style="padding: 5px 15px;">
+                    Indicator Component
+                </h1>
+                <br>
+                <!-- <p>
+                    on this page you will learn how to use modal component perfectly
+                </p> -->
+
+                <h2>
+                    What IS Indicator Component ?
+                </h2>
+
+                <p>
+                    With indicator component you can create modern list like modern menu or mega menu or something else,
+                    it all depends on your creativity.
+                </p>
+
+
+
+
+                <div class="w3-panel w3-text-teal w3-border w3-border-teal  w3-round-medium w3-padding">
+                    <p>
+                        note : In the examples below, I used the <b class="w3-border-bottom w3-border-teal">
+                            <a href="https://www.w3schools.com/w3css/" target="_blank">W3CSS</a>
+                        </b> library to style the Indicators. You can use any other method to design
+                    </p>
+                </div>
+
+
+
+
+                <h3 class="w3-text-blue">
+                    # Example One : vertical indicator
+                </h3>
+                <p>
+                    make a vertical list and added vertical indicator
+                </p>
+                <div class="w3-padding w3-round-large w3-border w3-white" style="width: 344px;">
+                    <ul class="w3-ul list-wrapper ">
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#3d64ff"
+                                    d="M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z" />
+                            </svg>
+                            TypeScript
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 16 16">
+                                <path fill="#fecc16"
+                                    d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM7.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1A1.5 1.5 0 0 0 8 10.5v-4a.5.5 0 0 0-.5-.5m1 1.5V8A1.5 1.5 0 0 0 10 9.5h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H9a.5.5 0 0 0 0 1h1.5a1.5 1.5 0 0 0 1.5-1.5V10a1.5 1.5 0 0 0-1.5-1.5H10a.5.5 0 0 1-.5-.5v-.5A.5.5 0 0 1 10 7h1.5a.5.5 0 0 0 0-1H10a1.5 1.5 0 0 0-1.5 1.5" />
+                            </svg>
+                            Javascript
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#5583ce"
+                                    d="M22.88 10.41a5.005 5.005 0 0 1-7.04-.62c-1.78-2.12-1.5-5.29.61-7.04l.51-.38A5.024 5.024 0 0 0 16.8 9c1.63 1.94 4.45 2.32 6.54.97zM21.1 14.5a7.48 7.48 0 0 1-10.56-.92c-2.67-3.17-2.25-7.9.92-10.58l.92-.64a7.494 7.494 0 0 0-.12 9.78c2.42 2.86 6.54 3.49 9.65 1.58zm-1.13 4.88c-4.44 3.73-11.07 3.15-14.8-1.3C1.45 13.64 2.03 7 6.47 3.29l1.11-.79c-3.51 3.8-3.73 9.73-.3 13.82c3.43 4.08 9.31 4.9 13.68 2.11z" />
+                            </svg>
+                            jQuery
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <circle cx="16" cy="15.974" r="2.5" fill="#007acc" />
+                                <path fill="#007acc"
+                                    d="M16 21.706a28.4 28.4 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.54 3.54 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.8 28.8 0 0 1 16 10.293a28.7 28.7 0 0 1 9.022 1.324a11.4 11.4 0 0 1 3.538 1.866A3.4 3.4 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191m0-10.217a28 28 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.2 27.2 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.33 2.33 0 0 0-1.01-1.573a10.2 10.2 0 0 0-3.161-1.654A27.5 27.5 0 0 0 16 11.489" />
+                                <path fill="#007acc"
+                                    d="M10.32 28.443a2.64 2.64 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.8 28.8 0 0 1 3.4-8.593a28.7 28.7 0 0 1 5.653-7.154a11.4 11.4 0 0 1 3.384-2.133a3.4 3.4 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.8 28.8 0 0 1-3.316 8.133a28.4 28.4 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.9 4.9 0 0 1-1.624.307m1.773-14.7a28 28 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.2 27.2 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.33 2.33 0 0 0-1.868.089A10.2 10.2 0 0 0 17.5 6.9a27.5 27.5 0 0 0-5.4 6.849Z" />
+                                <path fill="#007acc"
+                                    d="M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.8 28.8 0 0 1-5.747-7.237a28.7 28.7 0 0 1-3.374-8.471a11.4 11.4 0 0 1-.158-4A3.4 3.4 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.4 28.4 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.54 3.54 0 0 1-1.494 2.555a2.6 2.6 0 0 1-1.315.324m-9.58-10.2a28 28 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.2 27.2 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.33 2.33 0 0 0-.855 1.662a10.2 10.2 0 0 0 .153 3.565a27.5 27.5 0 0 0 3.236 8.1Z" />
+                            </svg>
+                            React
+                        </li>
+                    </ul>
+                    <div class="indicator w3-panel w3-pale-blue w3-round-medium"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <h3 class="w3-text-blue">
+                    # Example Two : Horizontal indicator (responsive)
+                </h3>
+                <p>
+                    make a Horizontal list and added Horizontal indicator
+                </p>
+                <div class="w3-padding w3-round-large w3-border w3-white" style="width: auto;">
+                    <ul class="w3-ul list-wrapper w3-row w3-center">
+                        <li class="item w3-cell-row w3-col m3">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#3d64ff"
+                                    d="M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z" />
+                            </svg>
+                            TypeScript
+                        </li>
+                        <li class="item w3-cell-row w3-col m3">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 16 16">
+                                <path fill="#fecc16"
+                                    d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM7.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1A1.5 1.5 0 0 0 8 10.5v-4a.5.5 0 0 0-.5-.5m1 1.5V8A1.5 1.5 0 0 0 10 9.5h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H9a.5.5 0 0 0 0 1h1.5a1.5 1.5 0 0 0 1.5-1.5V10a1.5 1.5 0 0 0-1.5-1.5H10a.5.5 0 0 1-.5-.5v-.5A.5.5 0 0 1 10 7h1.5a.5.5 0 0 0 0-1H10a1.5 1.5 0 0 0-1.5 1.5" />
+                            </svg>
+                            Javascript
+                        </li>
+                        <li class="item w3-cell-row w3-col m3">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#5583ce"
+                                    d="M22.88 10.41a5.005 5.005 0 0 1-7.04-.62c-1.78-2.12-1.5-5.29.61-7.04l.51-.38A5.024 5.024 0 0 0 16.8 9c1.63 1.94 4.45 2.32 6.54.97zM21.1 14.5a7.48 7.48 0 0 1-10.56-.92c-2.67-3.17-2.25-7.9.92-10.58l.92-.64a7.494 7.494 0 0 0-.12 9.78c2.42 2.86 6.54 3.49 9.65 1.58zm-1.13 4.88c-4.44 3.73-11.07 3.15-14.8-1.3C1.45 13.64 2.03 7 6.47 3.29l1.11-.79c-3.51 3.8-3.73 9.73-.3 13.82c3.43 4.08 9.31 4.9 13.68 2.11z" />
+                            </svg>
+                            jQuery
+                        </li>
+                        <li class="item w3-cell-row w3-col m3">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <circle cx="16" cy="15.974" r="2.5" fill="#007acc" />
+                                <path fill="#007acc"
+                                    d="M16 21.706a28.4 28.4 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.54 3.54 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.8 28.8 0 0 1 16 10.293a28.7 28.7 0 0 1 9.022 1.324a11.4 11.4 0 0 1 3.538 1.866A3.4 3.4 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191m0-10.217a28 28 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.2 27.2 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.33 2.33 0 0 0-1.01-1.573a10.2 10.2 0 0 0-3.161-1.654A27.5 27.5 0 0 0 16 11.489" />
+                                <path fill="#007acc"
+                                    d="M10.32 28.443a2.64 2.64 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.8 28.8 0 0 1 3.4-8.593a28.7 28.7 0 0 1 5.653-7.154a11.4 11.4 0 0 1 3.384-2.133a3.4 3.4 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.8 28.8 0 0 1-3.316 8.133a28.4 28.4 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.9 4.9 0 0 1-1.624.307m1.773-14.7a28 28 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.2 27.2 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.33 2.33 0 0 0-1.868.089A10.2 10.2 0 0 0 17.5 6.9a27.5 27.5 0 0 0-5.4 6.849Z" />
+                                <path fill="#007acc"
+                                    d="M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.8 28.8 0 0 1-5.747-7.237a28.7 28.7 0 0 1-3.374-8.471a11.4 11.4 0 0 1-.158-4A3.4 3.4 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.4 28.4 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.54 3.54 0 0 1-1.494 2.555a2.6 2.6 0 0 1-1.315.324m-9.58-10.2a28 28 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.2 27.2 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.33 2.33 0 0 0-.855 1.662a10.2 10.2 0 0 0 .153 3.565a27.5 27.5 0 0 0 3.236 8.1Z" />
+                            </svg>
+                            React
+                        </li>
+                    </ul>
+                    <div class="indicator w3-panel w3-pale-blue w3-round-medium"></div>
+                </div>
+
+
+                <h3>
+                    Isn't this interesting?
+                </h3>
+                <p>
+                    It may seem difficult to work with at first glance, but with a few lines of code, it magically
+                    starts up and works well anywhere.
+                </p>
+
+
+
+                <h3>
+                    How Use indicator Component
+                </h3>
+
+                <p>
+                    on the below part you will learn use indicator component
+                </p>
+
+                <h4>
+                    Step One : make indicator Body with HTML
+                </h4>
+
+                <pre><code class="language-html">&lt;div class=&quot;w3-padding w3-round-large w3-border w3-white&quot; style=&quot;width: 344px;&quot;&gt;
+         &lt;ul class=&quot;w3-ul list-wrapper &quot;&gt;
+            &lt;li class=&quot;item w3-cell-row&quot;&gt;
+                TypeScript
+            &lt;/li&gt;
+            &lt;li class=&quot;item w3-cell-row&quot;&gt;
+                Javascript
+            &lt;/li&gt;
+            &lt;li class=&quot;item w3-cell-row&quot;&gt;
+                jQuery
+            &lt;/li&gt;
+            &lt;li class=&quot;item w3-cell-row&quot;&gt;
+                React
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;indicator w3-panel w3-pale-blue w3-round-medium&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                <h4>
+                    Step Two : call indicator component
+                </h4>
+                <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js';
+    EasyJS.component('indicator', {
+        wrapperClass: 'list-wrapper',
+        itemsClass: 'item',
+        indicatorClass: 'indicator',
+        indicatorXmargin: '0px',
+        indicatorMove: function (indicator, targetItem) {
+            targetItem.style = 'position: relative; z-index: 99;'
+        },
+});</code></pre>
+
+                <h4>
+                    Result :
+                </h4>
+                <div class="w3-padding w3-round-large w3-border w3-white" style="width: 344px;">
+                    <ul class="w3-ul list-wrapper ">
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#3d64ff"
+                                    d="M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z" />
+                            </svg>
+                            TypeScript
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 16 16">
+                                <path fill="#fecc16"
+                                    d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM7.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1A1.5 1.5 0 0 0 8 10.5v-4a.5.5 0 0 0-.5-.5m1 1.5V8A1.5 1.5 0 0 0 10 9.5h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H9a.5.5 0 0 0 0 1h1.5a1.5 1.5 0 0 0 1.5-1.5V10a1.5 1.5 0 0 0-1.5-1.5H10a.5.5 0 0 1-.5-.5v-.5A.5.5 0 0 1 10 7h1.5a.5.5 0 0 0 0-1H10a1.5 1.5 0 0 0-1.5 1.5" />
+                            </svg>
+                            Javascript
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#5583ce"
+                                    d="M22.88 10.41a5.005 5.005 0 0 1-7.04-.62c-1.78-2.12-1.5-5.29.61-7.04l.51-.38A5.024 5.024 0 0 0 16.8 9c1.63 1.94 4.45 2.32 6.54.97zM21.1 14.5a7.48 7.48 0 0 1-10.56-.92c-2.67-3.17-2.25-7.9.92-10.58l.92-.64a7.494 7.494 0 0 0-.12 9.78c2.42 2.86 6.54 3.49 9.65 1.58zm-1.13 4.88c-4.44 3.73-11.07 3.15-14.8-1.3C1.45 13.64 2.03 7 6.47 3.29l1.11-.79c-3.51 3.8-3.73 9.73-.3 13.82c3.43 4.08 9.31 4.9 13.68 2.11z" />
+                            </svg>
+                            jQuery
+                        </li>
+                        <li class="item w3-cell-row">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <circle cx="16" cy="15.974" r="2.5" fill="#007acc" />
+                                <path fill="#007acc"
+                                    d="M16 21.706a28.4 28.4 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.54 3.54 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.8 28.8 0 0 1 16 10.293a28.7 28.7 0 0 1 9.022 1.324a11.4 11.4 0 0 1 3.538 1.866A3.4 3.4 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191m0-10.217a28 28 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.2 27.2 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.33 2.33 0 0 0-1.01-1.573a10.2 10.2 0 0 0-3.161-1.654A27.5 27.5 0 0 0 16 11.489" />
+                                <path fill="#007acc"
+                                    d="M10.32 28.443a2.64 2.64 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.8 28.8 0 0 1 3.4-8.593a28.7 28.7 0 0 1 5.653-7.154a11.4 11.4 0 0 1 3.384-2.133a3.4 3.4 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.8 28.8 0 0 1-3.316 8.133a28.4 28.4 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.9 4.9 0 0 1-1.624.307m1.773-14.7a28 28 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.2 27.2 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.33 2.33 0 0 0-1.868.089A10.2 10.2 0 0 0 17.5 6.9a27.5 27.5 0 0 0-5.4 6.849Z" />
+                                <path fill="#007acc"
+                                    d="M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.8 28.8 0 0 1-5.747-7.237a28.7 28.7 0 0 1-3.374-8.471a11.4 11.4 0 0 1-.158-4A3.4 3.4 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.4 28.4 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.54 3.54 0 0 1-1.494 2.555a2.6 2.6 0 0 1-1.315.324m-9.58-10.2a28 28 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.2 27.2 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.33 2.33 0 0 0-.855 1.662a10.2 10.2 0 0 0 .153 3.565a27.5 27.5 0 0 0 3.236 8.1Z" />
+                            </svg>
+                            React
+                        </li>
+                    </ul>
+                    <div class="indicator w3-panel w3-pale-blue w3-round-medium"></div>
+                </div>
+
+
+
+                <h3>
+                    let made something cool
+                </h3>
+
+                <p>
+                    on the below codes you can see a complete example
+                </p>
+
+                <h4>
+                    Step One : Create Indicator Body
+                </h4>
+                <pre style="max-height: 444px;"><code class="language-html">    &lt;section class=&quot;magic-list w3-white w3-padding w3-round-large&quot;&gt;
+
+                    &lt;ul class=&quot;w3-ul w3-center &quot; style=&quot;display: flex; flex-wrap: wrap;&quot;&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 24 24&quot;&gt;
+                                &lt;path fill=&quot;#3d64ff&quot;
+                                    d=&quot;M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z&quot; /&gt;
+                            &lt;/svg&gt;
+                            TypeScript
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item  w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 16 16&quot;&gt;
+                                &lt;path fill=&quot;#fecc16&quot;
+                                    d=&quot;M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM7.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1A1.5 1.5 0 0 0 8 10.5v-4a.5.5 0 0 0-.5-.5m1 1.5V8A1.5 1.5 0 0 0 10 9.5h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H9a.5.5 0 0 0 0 1h1.5a1.5 1.5 0 0 0 1.5-1.5V10a1.5 1.5 0 0 0-1.5-1.5H10a.5.5 0 0 1-.5-.5v-.5A.5.5 0 0 1 10 7h1.5a.5.5 0 0 0 0-1H10a1.5 1.5 0 0 0-1.5 1.5&quot; /&gt;
+                            &lt;/svg&gt;
+                            Javascript
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 24 24&quot;&gt;
+                                &lt;path fill=&quot;#5583ce&quot;
+                                    d=&quot;M22.88 10.41a5.005 5.005 0 0 1-7.04-.62c-1.78-2.12-1.5-5.29.61-7.04l.51-.38A5.024 5.024 0 0 0 16.8 9c1.63 1.94 4.45 2.32 6.54.97zM21.1 14.5a7.48 7.48 0 0 1-10.56-.92c-2.67-3.17-2.25-7.9.92-10.58l.92-.64a7.494 7.494 0 0 0-.12 9.78c2.42 2.86 6.54 3.49 9.65 1.58zm-1.13 4.88c-4.44 3.73-11.07 3.15-14.8-1.3C1.45 13.64 2.03 7 6.47 3.29l1.11-.79c-3.51 3.8-3.73 9.73-.3 13.82c3.43 4.08 9.31 4.9 13.68 2.11z&quot; /&gt;
+                            &lt;/svg&gt;
+                            jQuery
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 32 32&quot;&gt;
+                                &lt;circle cx=&quot;16&quot; cy=&quot;15.974&quot; r=&quot;2.5&quot; fill=&quot;#007acc&quot; /&gt;
+                                &lt;path fill=&quot;#007acc&quot;
+                                    d=&quot;M16 21.706a28.4 28.4 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.54 3.54 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.8 28.8 0 0 1 16 10.293a28.7 28.7 0 0 1 9.022 1.324a11.4 11.4 0 0 1 3.538 1.866A3.4 3.4 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191m0-10.217a28 28 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.2 27.2 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.33 2.33 0 0 0-1.01-1.573a10.2 10.2 0 0 0-3.161-1.654A27.5 27.5 0 0 0 16 11.489&quot; /&gt;
+                                &lt;path fill=&quot;#007acc&quot;
+                                    d=&quot;M10.32 28.443a2.64 2.64 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.8 28.8 0 0 1 3.4-8.593a28.7 28.7 0 0 1 5.653-7.154a11.4 11.4 0 0 1 3.384-2.133a3.4 3.4 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.8 28.8 0 0 1-3.316 8.133a28.4 28.4 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.9 4.9 0 0 1-1.624.307m1.773-14.7a28 28 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.2 27.2 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.33 2.33 0 0 0-1.868.089A10.2 10.2 0 0 0 17.5 6.9a27.5 27.5 0 0 0-5.4 6.849Z&quot; /&gt;
+                                &lt;path fill=&quot;#007acc&quot;
+                                    d=&quot;M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.8 28.8 0 0 1-5.747-7.237a28.7 28.7 0 0 1-3.374-8.471a11.4 11.4 0 0 1-.158-4A3.4 3.4 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.4 28.4 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.54 3.54 0 0 1-1.494 2.555a2.6 2.6 0 0 1-1.315.324m-9.58-10.2a28 28 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.2 27.2 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.33 2.33 0 0 0-.855 1.662a10.2 10.2 0 0 0 .153 3.565a27.5 27.5 0 0 0 3.236 8.1Z&quot; /&gt;
+                            &lt;/svg&gt;
+                            React
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 32 32&quot;&gt;
+                                &lt;path fill=&quot;#dd0031&quot; d=&quot;M16 2L2.966 6.648l1.988 17.234L16 30l11.046-6.118l1.988-17.234z&quot; /&gt;
+                                &lt;path fill=&quot;#c3002f&quot; d=&quot;M16 2v3.108v-.014V30l11.046-6.118l1.988-17.234z&quot; /&gt;
+                                &lt;path fill=&quot;#fff&quot;
+                                    d=&quot;m16 5.094l-8.148 18.27h3.038l1.638-4.088h6.916l1.638 4.088h3.038zm2.38 11.662h-4.76L16 11.03Z&quot; /&gt;
+                            &lt;/svg&gt;
+                            Angular
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 32 32&quot;&gt;
+                                &lt;path fill=&quot;#41b883&quot; d=&quot;M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z&quot; /&gt;
+                                &lt;path fill=&quot;#41b883&quot; d=&quot;m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z&quot; /&gt;
+                                &lt;path fill=&quot;#35495e&quot; d=&quot;M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z&quot; /&gt;
+                            &lt;/svg&gt;
+                            Vue JS
+                        &lt;/li&gt;
+                        &lt;li class=&quot;item w3-border-0&quot; style=&quot;flex: auto;&quot;&gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                                viewBox=&quot;0 0 24 24&quot;&gt;
+                                &lt;path fill=&quot;#c92626&quot;
+                                    d=&quot;M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z&quot; /&gt;
+                            &lt;/svg&gt;
+                            Laravel
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class=&quot;magic-indicator w3-card w3-panel w3-padding w3-round-large w3-white&quot; &gt;
+                         &lt;h4 class=&quot;label&quot; &gt;
+                            &lt;svg class=&quot;w3-cell-middle&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;2em&quot; height=&quot;2em&quot;
+                            viewBox=&quot;0 0 24 24&quot;&gt;
+                            &lt;path fill=&quot;#c92626&quot;
+                                d=&quot;M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z&quot; /&gt;
+                        &lt;/svg&gt;
+                        Laravel
+                         &lt;/h4&gt;
+                         &lt;p&gt;
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam voluptates necessitatibus natus laudantium soluta quaerat, cum sit porro harum odio expedita?
+                         &lt;/p&gt;
+                    &lt;/div&gt;
+            
+                &lt;/section&gt;</code></pre>
+
+                <h4>
+                    Step Two : Call Indicator Component
+                </h4>
+                <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js';
+EasyJS.component('indicator', {
+        wrapperClass: 'magic-list',
+        itemsClass: 'item',
+        indicatorClass: 'magic-indicator',
+        indicatorYmargin: '20px',
+        indicatorXmargin: '-20px',
+        mode: 'x',
+        events : ['click'],
+        indicatorDefaultHidden: true,
+        cover: true,
+        indicatorMovingSpeed: '0.5s',
+        eventsMaxSensitivity: false,
+        indicatorAnimationIn: 'bounceInUp',
+        indicatorAnimationOut: 'bounceOutDown',
+        hideIndicatorWhenEventTargetIsNotIndicatorChild: true,
+        indicatorMove: function (indicator, targetItem) {
+            indicator.style.width = '300px'
+            indicator.style.height = 'auto'
+            indicator.querySelector('h4').innerHTML = targetIinnerHTML;
+        },
+});</code></pre>
+                <h4>
+                    Result :
+                </h4>
+
+                <section class="magic-list w3-white w3-padding w3-round-large">
+
+                    <ul class="w3-ul w3-center " style="display: flex; flex-wrap: wrap;">
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#3d64ff"
+                                    d="M3 3h18v18H3zm10.71 14.86c.5.98 1.51 1.73 3.09 1.73c1.6 0 2.8-.83 2.8-2.36c0-1.41-.81-2.04-2.25-2.66l-.42-.18c-.73-.31-1.04-.52-1.04-1.02c0-.41.31-.73.81-.73c.48 0 .8.21 1.09.73l1.31-.87c-.55-.96-1.33-1.33-2.4-1.33c-1.51 0-2.48.96-2.48 2.23c0 1.38.81 2.03 2.03 2.55l.42.18c.78.34 1.24.55 1.24 1.13c0 .48-.45.83-1.15.83c-.83 0-1.31-.43-1.67-1.03zM13 11.25H8v1.5h1.5V20h1.75v-7.25H13z" />
+                            </svg>
+                            TypeScript
+                        </li>
+                        <li class="item  w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 16 16">
+                                <path fill="#fecc16"
+                                    d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM7.5 6a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1A1.5 1.5 0 0 0 8 10.5v-4a.5.5 0 0 0-.5-.5m1 1.5V8A1.5 1.5 0 0 0 10 9.5h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5H9a.5.5 0 0 0 0 1h1.5a1.5 1.5 0 0 0 1.5-1.5V10a1.5 1.5 0 0 0-1.5-1.5H10a.5.5 0 0 1-.5-.5v-.5A.5.5 0 0 1 10 7h1.5a.5.5 0 0 0 0-1H10a1.5 1.5 0 0 0-1.5 1.5" />
+                            </svg>
+                            Javascript
+                        </li>
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#5583ce"
+                                    d="M22.88 10.41a5.005 5.005 0 0 1-7.04-.62c-1.78-2.12-1.5-5.29.61-7.04l.51-.38A5.024 5.024 0 0 0 16.8 9c1.63 1.94 4.45 2.32 6.54.97zM21.1 14.5a7.48 7.48 0 0 1-10.56-.92c-2.67-3.17-2.25-7.9.92-10.58l.92-.64a7.494 7.494 0 0 0-.12 9.78c2.42 2.86 6.54 3.49 9.65 1.58zm-1.13 4.88c-4.44 3.73-11.07 3.15-14.8-1.3C1.45 13.64 2.03 7 6.47 3.29l1.11-.79c-3.51 3.8-3.73 9.73-.3 13.82c3.43 4.08 9.31 4.9 13.68 2.11z" />
+                            </svg>
+                            jQuery
+                        </li>
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <circle cx="16" cy="15.974" r="2.5" fill="#007acc" />
+                                <path fill="#007acc"
+                                    d="M16 21.706a28.4 28.4 0 0 1-8.88-1.2a11.3 11.3 0 0 1-3.657-1.958A3.54 3.54 0 0 1 2 15.974c0-1.653 1.816-3.273 4.858-4.333A28.8 28.8 0 0 1 16 10.293a28.7 28.7 0 0 1 9.022 1.324a11.4 11.4 0 0 1 3.538 1.866A3.4 3.4 0 0 1 30 15.974c0 1.718-2.03 3.459-5.3 4.541a28.8 28.8 0 0 1-8.7 1.191m0-10.217a28 28 0 0 0-8.749 1.282c-2.8.977-4.055 2.313-4.055 3.2c0 .928 1.349 2.387 4.311 3.4A27.2 27.2 0 0 0 16 20.51a27.6 27.6 0 0 0 8.325-1.13C27.4 18.361 28.8 16.9 28.8 15.974a2.33 2.33 0 0 0-1.01-1.573a10.2 10.2 0 0 0-3.161-1.654A27.5 27.5 0 0 0 16 11.489" />
+                                <path fill="#007acc"
+                                    d="M10.32 28.443a2.64 2.64 0 0 1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.8 28.8 0 0 1 3.4-8.593a28.7 28.7 0 0 1 5.653-7.154a11.4 11.4 0 0 1 3.384-2.133a3.4 3.4 0 0 1 2.878 0c1.489.858 1.982 3.486 1.287 6.859a28.8 28.8 0 0 1-3.316 8.133a28.4 28.4 0 0 1-5.476 7.093a11.3 11.3 0 0 1-3.523 2.189a4.9 4.9 0 0 1-1.624.307m1.773-14.7a28 28 0 0 0-3.26 8.219c-.553 2.915-.022 4.668.75 5.114c.8.463 2.742.024 5.1-2.036a27.2 27.2 0 0 0 5.227-6.79a27.6 27.6 0 0 0 3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.33 2.33 0 0 0-1.868.089A10.2 10.2 0 0 0 17.5 6.9a27.5 27.5 0 0 0-5.4 6.849Z" />
+                                <path fill="#007acc"
+                                    d="M21.677 28.456c-1.355 0-3.076-.82-4.868-2.361a28.8 28.8 0 0 1-5.747-7.237a28.7 28.7 0 0 1-3.374-8.471a11.4 11.4 0 0 1-.158-4A3.4 3.4 0 0 1 8.964 3.9c1.487-.861 4.01.024 6.585 2.31a28.8 28.8 0 0 1 5.39 6.934a28.4 28.4 0 0 1 3.41 8.287a11.3 11.3 0 0 1 .137 4.146a3.54 3.54 0 0 1-1.494 2.555a2.6 2.6 0 0 1-1.315.324m-9.58-10.2a28 28 0 0 0 5.492 6.929c2.249 1.935 4.033 2.351 4.8 1.9c.8-.465 1.39-2.363.782-5.434A27.2 27.2 0 0 0 19.9 13.74a27.6 27.6 0 0 0-5.145-6.64c-2.424-2.152-4.39-2.633-5.191-2.169a2.33 2.33 0 0 0-.855 1.662a10.2 10.2 0 0 0 .153 3.565a27.5 27.5 0 0 0 3.236 8.1Z" />
+                            </svg>
+                            React
+                        </li>
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <path fill="#dd0031"
+                                    d="M16 2L2.966 6.648l1.988 17.234L16 30l11.046-6.118l1.988-17.234z" />
+                                <path fill="#c3002f" d="M16 2v3.108v-.014V30l11.046-6.118l1.988-17.234z" />
+                                <path fill="#fff"
+                                    d="m16 5.094l-8.148 18.27h3.038l1.638-4.088h6.916l1.638 4.088h3.038zm2.38 11.662h-4.76L16 11.03Z" />
+                            </svg>
+                            Angular
+                        </li>
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 32 32">
+                                <path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6l3.22-5.6Z" />
+                                <path fill="#41b883" d="m2 3.925l14 24.15l14-24.15h-5.6L16 18.415L7.53 3.925Z" />
+                                <path fill="#35495e" d="M7.53 3.925L16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z" />
+                            </svg>
+                            Vue JS
+                        </li>
+                        <li class="item w3-border-0" style="flex: auto;">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#c92626"
+                                    d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z" />
+                            </svg>
+                            Laravel
+                        </li>
+                    </ul>
+                    <div class="magic-indicator w3-card w3-panel w3-padding w3-round-large w3-white">
+                        <h4 class="label">
+                            <svg class="w3-cell-middle" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                viewBox="0 0 24 24">
+                                <path fill="#c92626"
+                                    d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z" />
+                            </svg>
+                            Laravel
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam voluptates
+                            necessitatibus natus
+                            laudantium soluta quaerat.
+                        </p>
+                    </div>
+
+                </section>
+
+
+
+
+
+
+
+
+
+
+                <h3 class="label-an">
+                    Indicator Component Options
+                </h3>
+
+                <p>
+                    on below part you can see total Indicator Component Options
+                </p>
+
+                <section class="options w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-red fw-normal">
+                        @ Required Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>wrapperClass</b> : string () => indicator  wrapper class
+                        </li>
+                        <li>
+                            <b>itemsClass</b> : string () => indicator items class
+                        </li>
+                        <li>
+                            <b>indicatorClass</b> : string () => indicator class
+                        </li>
+                    </ul>
+                    <h4 class="w3-text-teal fw-normal">
+                        @ Optional Options
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            <b>mode</b> : string (both) => indicator move ratio <b class="w3-text-blue">
+                                ( both | x | y )
+                            </b>
+                        </li>
+                    
+                 
+                        <li>
+                            <b>indicatorMovingSpeed</b> : string (1s) => indicator move speed
+                        </li>
+                        <li>
+                            <b>indicatorMove</b> : callback(indicator,targetItem) => this callback function fired when indicator moving
+                        </li>
+                        <li>
+                            <b>indicatorStop</b> : callback(indicator,targetItem) => this callback function fired when indicator stop
+                        </li>
+                        <li>
+                            <b>events</b> : array(['mousemove', 'click']) => indicator events : any js event is accepted
+                        </li>
+                        <li>
+                            <b>indicatorPositionMode</b> : string      (absolute) => indicator position mode <b class="w3-text-blue"> 
+                                ( fixed | relative | static | absolute )
+                            </b>
+                        </li>
+                        <li>
+                            <b>indicatorRatio</b> : string (center | end) => indicator Ratio 
+                        </li>
+                        <li>
+                            <b>indicatorYmargin</b> : string (0px) => indicator vertical margin 
+                        </li>
+                        <li>
+                            <b>indicatorXmargin</b> : string (0px) => indicator horizontal margin 
+                        </li>
+                        <li>
+                            <b>cover</b> : bool (true) => if set true ,  indicator will cover with current target size
+                        </li>
+                        <li>
+                            <b>eventsMaxSensitivity</b> : bool (false) => this is event sensitivity mode , if set true, any event on target elm with have max sensitivity
+                        </li>
+                        <li>
+                            <b>indicatorDefaultHidden</b> : bool (false) => indicator will default hide, and when client start working with registered events indicator will showing and when client stop working with events indicator  will hidden again
+                        </li>
+                        <li>
+                            <b>indicatorAnimationIn</b> : string () => add an animation for indicator when client work with events
+                        </li>
+                        
+                        <li>
+                            <b>indicatorAnimationOut</b> : string () => add an animation for indicator when client stop working with events
+                        </li>
+                        <li>
+                            <b>indicatorAnimationSpeed</b> : string (1s) => indicator animation speed
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="changelog w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                    <h4 class="w3-text-black fw-normal">
+                        @ Change Log
+                    </h4>
+                    <ul class="w3-ul">
+                        <li>
+                            ...
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ****************************************** preview start ****************************************** -->
+
+
+
+    <script type="module">
+        import { EasyJS } from './easyjs/components/dist/easyjs.js'
+        EasyJS.debug('alert');
+        EasyJS.component('indicator', {
+            wrapperClass: 'list-wrapper',
+            itemsClass: 'item',
+            indicatorClass: 'indicator',
+            indicatorXmargin: '0px',
+            indicatorMove: function (indicator, targetItem) {
+                targetItem.style = 'position: relative; z-index: 99;'
+            },
+        });
+        EasyJS.component('indicator', {
+            wrapperClass: 'magic-list',
+            itemsClass: 'item',
+            indicatorClass: 'magic-indicator',
+            indicatorYmargin: '20px',
+            indicatorXmargin: '-20px',
+            mode: 'x',
+            events: ['click'],
+            indicatorDefaultHidden: true,
+            cover: true,
+            indicatorMovingSpeed: '0.5s',
+            eventsMaxSensitivity: false,
+            indicatorAnimationIn: 'bounceInUp',
+            indicatorAnimationOut: 'bounceOutDown',
+            hideIndicatorWhenEventTargetIsNotIndicatorChild: true,
+            indicatorMove: function (indicator, targetItem) {
+                indicator.style.width = '300px'
+                indicator.style.height = 'auto'
+                indicator.querySelector('h4').innerHTML = targetItem.innerHTML;
+            },
+        });
+    </script>
+    <!-- ****************************************** preview end ****************************************** -->
+    <div class="side-mobile-wrapper w3-hide-large w3-hide-medium bg-2" style="margin-top: 30px; margin-bottom: -10px;">
+
+
+
+
+
+    </div>
+
+    <section class="footer-wrapper"></section>
+
+    <script src="assets/js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+</body>
+
+</html>
