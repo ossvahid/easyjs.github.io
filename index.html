@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="theme-color" content="#42495B">
 
-
-    <script>
-        alert((new URLSearchParams(location.search)).get('lang'))
-    </script>
-
 </head>
 
 <body>
@@ -54,17 +49,14 @@
                 </h3>
 
                 <h4 class="fw-normal">
-                    Install EasyJS via "npm"
+                    Install EasyJS via npm
                 </h4>
                 <pre><code class="language-javascript">npm install easyjs</code></pre>
                 <h3>
                     OR
                 </h3>
                 <h4 class="fw-normal">
-                    download EasyJs from
-                    <a href="#" class="w3-text-blue w3-border-bottom w3-border-blue">
-                        github
-                    </a>
+                    download EasyJs from <a href="#" class="w3-text-blue w3-border-bottom w3-border-blue">github</a>
                 </h4>
 
 
@@ -82,7 +74,7 @@
 
                 <div class="w3-panel w3-blue w3-border w3-round-medium w3-padding">
                     <p>
-                        note : your js script TAG must have module type attribute LIKE : type="module"
+                        note : your js script TAG must have module type attribute LIKE : type='module'
                     </p>
                 </div>
 
@@ -107,16 +99,15 @@ EasyJS.component('modal', {
    handlerClass: 'modalHandlerClass',
 });</code></pre>
 
+
+                <button class="w3-button w3-teal w3-round-medium w3-medium openTextModal-1"
+                    style="padding: 0px 15px;">Show Modal</button>
+                <br>
                 <p>
-                    <button class="w3-button w3-teal w3-round-medium w3-medium openTextModal-1"
-                        style="padding: 0px 15px;">Show
-                        Modal</button>
-                    <br>
                     In the above example, easy js will create an instant modal. If you like please go to see the
                     complete details with the list of easy js components
-
-
                 </p>
+
 
 
 
@@ -176,13 +167,82 @@ EasyJS.component('modal', {
             wrapperClass: 'testModal-1',
             handlerClass: 'openTextModal-1',
         });
+
+        import { Translate } from "./assets/js/js.js";
+        Translate([
+            {
+                "en": "Get start",
+                "fa": "شروع یادگیری",
+            },
+            {
+                "en": "Installation",
+                "fa": "نصب و راه اندازی",
+            },
+            {
+                "en": "on this page you will learn how to run easy js and import this package to your project very easy",
+                "fa": "در این صفحه یاد خواهید گرفت که چطوری easy js را به راحتی نصب و راه اندازی کنید ",
+            },
+            {
+                "en": "Install EasyJS via npm",
+                "fa": "نصب با npm",
+            },
+            {
+                "en": "download EasyJs from github",
+                "fa": "دانلود از گیت هاب",
+            },
+            {
+                "en": "OR",
+                "fa": "یا",
+            },
+            {
+                "en": "THEN",
+                "fa": "سپس",
+            },
+            {
+                "en": "Import EasyJS To Your Project",
+                "fa": "easy js رو میتونید به راحتی به کد خودتون اضافه کنید",
+            },
+            {
+                "en": "note : your js script TAG must have module type attribute LIKE : type='module'",
+                "fa": "نکته خیلی مهم : تگ اسکریچت شما بایدحتما ویژگی مدل رو داشته باشه . اینطوری type='module' ",
+            },
+            {
+                "en": "Finally call the component static method",
+                "fa": "در نهایت متد کامپوننت از کلاس EasyJS رو صد ابزنید",
+            },
+            {
+                "en": "Let's give an example (make a modal)",
+                "fa": "بزارید با easyJS یک پاپ اپ براتون بسازم",
+            },
+            {
+                "en": "Show Modal",
+                "fa": "نمایش پاپ آپ",
+            },
+            {
+                "en": "In the above example, easy js will create an instant modal. If you like please go to see the complete details with the list of easy js components",
+                "fa": "در مثال بالا easyjs یک پاپ آپ ساده ایجاد کرد . اگر علاقه مند به یادگیری بیشتر هستید لطفا با لیست کامپوننت های easyjs سر بزنید",
+            },
+            {
+                "en": "This is A simple Modal IS Created Via EasyJS",
+                "fa": "این یک پاپ آپ ساده است",
+            },
+            {
+                "en": "You can create more beautiful Modal with more settings and your creativity, just visit the Modal Component page",
+                "fa": "میتوانید پاپ آپ های خیلی حرفه ای تری بسازید فقط به کامپوننت مدال ی سر بزنید ",
+            },
+        ]);
     </script>
+
+
 
     <!-- ****************************************** preview end ****************************************** -->
     <section class="footer-wrapper"></section>
 
     <script src="assets/js/js.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+
+
 
 </body>
 
