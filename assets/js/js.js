@@ -53,7 +53,14 @@ function FetchPart(code) {
                 "en": "Components",
                 "fa": "کامپوننت ها"
             },
-
+            {
+                "en": "write less do more with EasyJS",
+                "fa": "کمتر کد بزن بیشتر اجرا کن"
+            },
+            {
+                "en": "beta",
+                "fa": "پایه"
+            },
         ])
     })
 }
