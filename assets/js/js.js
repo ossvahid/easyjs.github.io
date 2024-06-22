@@ -5,31 +5,6 @@
 
 
 
- function Translate(translatesObject = {}) {
-    const lang = (new URLSearchParams(location.search)).get('lang') ?? 'en';
-    if (lang === 'en') {
-return;
-    }
-    const translate = translatesObject;
-    document.querySelectorAll('*').forEach(function (element) {
-        if (lang === 'fa') {
-            element.style.textAlign = 'right';
-            element.style.direction = 'rtl';
-            if (element.tagName === 'PRE') {
-                element.style.textAlign = 'left';
-                element.style.direction = 'ltr';
-            }
-        }
-        const current = element.textContent.trim().replace(/\s+/g, ' ');
-        translate.forEach(function (translation) {
-            if (current === translation.en) {
-                element.textContent = translation[lang];
-            }
-        });
-    });
-
-}
-
 
 
 
