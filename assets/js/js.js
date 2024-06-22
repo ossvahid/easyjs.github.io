@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 export function Translate(translatesObject = {}) {
     const lang = (new URLSearchParams(location.search)).get('lang') ?? 'en';
     if (lang === 'en') {
