@@ -5,7 +5,6 @@ import { ESJscrollToShow } from './ScrollToShow.js';
 import { ESJindicator } from './indicator.js';
 import { ESJaccordion } from './accordion.js';
 import { ESJsticky } from './sticky.js';
-import { ESJdropdown } from './dropdown.js';
 // easyjs main
 import { ESJinit } from './easyjs.js';
 
@@ -36,8 +35,7 @@ export const Components: any | object = {
     scrollToShow: ESJscrollToShow,
     accordion:ESJaccordion,
     indicator : ESJindicator,
-    sticky: ESJsticky,
-    dropdown: ESJdropdown
+    sticky: ESJsticky
 };
 
 export { ESJinit };
