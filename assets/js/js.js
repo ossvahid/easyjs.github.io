@@ -5,7 +5,7 @@
 
 
 
-export function Translate(translatesObject = {}) {
+ function Translate(translatesObject = {}) {
     const lang = (new URLSearchParams(location.search)).get('lang') ?? 'en';
     if (lang === 'en') {
 return;
