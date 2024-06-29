@@ -393,7 +393,7 @@ EasyJS.component('indicator', {
         eventsMaxSensitivity: false,
         indicatorAnimationIn: 'bounceInUp',
         indicatorAnimationOut: 'bounceOutDown',
-        hideIndicatorWhenEventTargetIsNotIndicatorChild: true,
+        destroyAfterEventEnded: true,
         indicatorMove: function (indicator, targetItem) {
             indicator.style.width = '300px'
             indicator.style.height = 'auto'
@@ -579,6 +579,11 @@ EasyJS.component('indicator', {
                         <li>
                             <b>indicatorAnimationSpeed</b> : string (1s) => indicator animation speed
                         </li>
+                        <li>
+                            <b>destroyAfterEventEnded</b> : bool (false) => destroy after event is end
+                        </li>
+
+                        
                     </ul>
                 </section>
 
@@ -636,7 +641,7 @@ EasyJS.component('indicator', {
             eventsMaxSensitivity: false,
             indicatorAnimationIn: 'bounceInUp',
             indicatorAnimationOut: 'bounceOutDown',
-            hideIndicatorWhenEventTargetIsNotIndicatorChild: true,
+            destroyAfterEventEnded: true,
             indicatorMove: function (indicator, targetItem) {
                 indicator.style.width = '300px'
                 indicator.style.height = 'auto'
