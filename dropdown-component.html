@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easy js : dropdown component</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3css.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="theme-color" content="#42495B">
+
+</head>
+
+<body>
+
+
+
+    <div class="w3-container w3-row w3-padding">
+        <div class="side-wrapper w3-container w3-col m3 w3-hide-small">
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="content w3-container w3-col m9">
+            <div class="w3-display-container w3-padding-16 header-wrapper">
+
+            </div>
+
+
+            <div class="main " style="margin-top: 40px; line-height: 2.3em; font-size: 17px;">
+                <h1 class="w3-badge w3-round-medium w3-large  bg-1" style="padding: 5px 15px;">
+                    Dropdown Component
+                </h1>
+                <br>
+                <!-- <p>
+                    on this page you will learn how to use modal component perfectly
+                </p> -->
+
+                <h2>
+                    What IS Dropdown Component ?
+                </h2>
+
+                <p>
+                    You can create a dynamic box with the Dropdown component
+                </p>
+
+
+
+                <h3>
+                    Example One (make a basic dropdown)
+                </h3>
+
+                <p>
+                    first create dropdown html body and dropdown handler
+                </p>
+
+                <pre><code class="language-html"> &lt;button class=&quot;w3-button w3-teal w3-round-medium w3-padding-small dropdown-handler&quot;&gt;
+                    See Dropdown
+                &lt;/button&gt;
+
+&lt;div class=&quot;dropdown-wrapper w3-card w3-padding w3-white w3-round-large &quot;&gt;
+                    &lt;h4&gt;
+                        A Simple DropDown
+                    &lt;/h4&gt;
+                    &lt;p&gt;
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur labore.
+           &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                <h3>
+                    Then Call dropdown component
+                </h3>
+                <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js'
+    EasyJS.component('dropdown', {
+        wrapperClass: 'dropdown-wrapper',
+        handlerClass: 'dropdown-handler',
+        width: '300px',
+        events: ['click'],
+})</code></pre>
+
+
+                <button class="w3-button w3-teal w3-round-medium w3-padding-small dropdown-handler">
+                    See Dropdown
+                </button>
+
+                <div class="dropdown-wrapper w3-card w3-padding w3-white w3-round-large ">
+                    <h4>
+                        A Simple DropDown
+                    </h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur labore.
+                    </p>
+                </div>
+
+
+                <h4>
+                   you can add new animation
+                </h4>
+                <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js'
+    EasyJS.component('dropdown', {
+        wrapperClass: 'dropdown-wrapper',
+        handlerClass: 'dropdown-handler',
+        width: '300px',
+        events: ['click'],
+        animationIn: 'bounceIn',
+        animationOut: 'bounceOut',
+        animationSpeed: '1s',
+})</code></pre>
+
+
+
+                <button class="w3-button w3-red w3-round-medium w3-padding-small dropdown-handler2">
+                    See Dropdown 2 with animation
+                </button>
+
+                <div class="dropdown-wrapper2 w3-card w3-padding w3-white w3-round-large ">
+                    <h4>
+                        A Simple DropDown (with animation)
+                    </h4>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur labore.
+                    </p>
+                </div>
+
+
+                <h4>
+                   open default
+                 </h4>
+                 <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js'
+    EasyJS.component('dropdown', {
+        wrapperClass: 'dropdown-wrapper3',
+        handlerClass: 'dropdown-handler3',
+        width: 'fit-parent',
+        events: ['click'],
+        animationIn: 'fadeInUp',
+        animationOut: 'fadeOutDown',
+        defaultHidden: false,
+})</code></pre>
+
+                <button class="w3-button w3-red w3-round-medium w3-padding-small dropdown-handler3"
+                    style="width: 330px;">
+                    is Open Default
+                </button>
+
+                <div class="dropdown-wrapper3 w3-card w3-padding w3-white w3-round-large ">
+                    <h4>
+                        A Simple DropDown
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quae, laboriosam sunt hic minima
+                        autem dolori
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ****************************************** preview start ****************************************** -->
+
+
+
+    <script type="module">
+        import { EasyJS } from './easyjs/components/dist/easyjs.js'
+        EasyJS.debug('alert');
+        EasyJS.component('dropdown', {
+            wrapperClass: 'dropdown-wrapper',
+            handlerClass: 'dropdown-handler',
+            width: '300px',
+            events: ['click'],
+            animationIn: 'fadeIn',
+            animationOut: 'fadeOut',
+        })
+
+        EasyJS.component('dropdown', {
+            wrapperClass: 'dropdown-wrapper2',
+            handlerClass: 'dropdown-handler2',
+            width: '300px',
+            events: ['click'],
+            animationIn: 'bounceIn',
+            animationOut: 'bounceOut',
+            animationSpeed: '1s',
+        })
+
+        EasyJS.component('dropdown', {
+            wrapperClass: 'dropdown-wrapper3',
+            handlerClass: 'dropdown-handler3',
+            width: 'fit-parent',
+            events: ['click'],
+            animationIn: 'fadeInUp',
+            animationOut: 'fadeOutDown',
+            defaultHidden: false,
+        })
+    </script>
+    <!-- ****************************************** preview end ****************************************** -->
+    <div class="side-mobile-wrapper w3-hide-large w3-hide-medium bg-2" style="margin-top: 30px; margin-bottom: -10px;">
+
+
+
+
+
+    </div>
+
+    <section class="footer-wrapper"></section>
+
+    <script src="assets/js/js.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+
+</body>
+
+</html>
