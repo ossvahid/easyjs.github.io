@@ -10,7 +10,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="theme-color" content="#42495B">
-
+    <style>
+        .active-item {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #39649c;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,13 +54,12 @@
                 </h2>
 
                 <p>
-                    easyjs is a simple and open-source package for creating various front-end elements, such as custom
-                    modals, and more, written in TypeScript. The key features of easyjs include:
+                    The Accordion component is a useful and simple tool for creating Accordion lists anywhere
                 </p>
 
                 <div class="w3-panel w3-teal w3-border  w3-round-medium w3-padding">
                     <p>
-                        note : In the examples below, I used the <b class="w3-border-bottom w3-border-teal" >
+                        note : In the examples below, I used the <b class="w3-border-bottom w3-border-teal">
                             <a href="https://www.w3schools.com/w3css/" target="_blank">W3CSS</a>
                         </b> library to style the modals. You can use any other method to design
                     </p>
@@ -67,44 +73,155 @@
                     Step One : make according Body with HTML
                 </h4>
 
+                <pre><code class="language-html">&lt;section class=&quot;w3-container w3-padding w3-border w3-round accordion-wrapper&quot;&gt;
+                  &lt;ul&gt;
+                    &lt;li class=&quot;item&quot;&gt;
+                       &lt;h4 class=&quot;heading &quot;&gt;
+                        React
+                       &lt;/h4&gt;
+                       &lt;div class=&quot;data w3-border w3-round w3-padding&quot;&gt;
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
+                       &lt;/div&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class=&quot;item&quot;&gt;
+                        &lt;h4 class=&quot;heading&quot;&gt;
+                         TypeScript
+                        &lt;/h4&gt;
+                        &lt;div class=&quot;data w3-border w3-round w3-padding&quot;&gt;
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
+                        &lt;/div&gt;
+                     &lt;/li&gt;
+
+
+                     &lt;li class=&quot;item&quot;&gt;
+                        &lt;h4 class=&quot;heading&quot;&gt;
+                         JavaScript
+                        &lt;/h4&gt;
+                        &lt;div class=&quot;data w3-border w3-round w3-padding&quot;&gt;
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
+                        &lt;/div&gt;
+                     &lt;/li&gt;
+                  &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+
 
                 <h4>
                     Step Two : call accordion component
                 </h4>
-
+                <pre><code class="language-javascript">import { EasyJS } from './easyjs/components/dist/easyjs.js';
+EasyJS.component('accordion',{
+    'wrapperClass': 'accordion-wrapper',
+    'itemClass': 'item',
+    'itemDataClass': 'data',
+    'itemHeadingClass': 'heading',
+    'icon':'plus',
+    'defaultItemOpen': 1,
+    'allItemOpenable': true,
+    'itemActiveClass': 'active-item'
+})</code></pre>
+                <h4>
+                    Result :
+                </h4>
                 <section class="w3-container w3-padding w3-border w3-round accordion-wrapper">
-                  <ul>
-                    <li class="item">
-                       <h4 class="heading ">
-                        React
-                       </h4>
-                       <div class="data w3-border w3-round w3-padding">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
-                       </div>
-                    </li>
+                    <ul>
+                        <li class="item">
+                            <h4 class="heading ">
+                                React
+                            </h4>
+                            <div class="data w3-border w3-round w3-padding">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt
+                                deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero
+                                culpa iure dicta quis laborum animi laboriosam aperiam!
+                            </div>
+                        </li>
 
-                    <li class="item">
-                        <h4 class="heading">
-                         TypeScript
-                        </h4>
-                        <div class="data w3-border w3-round w3-padding">
-                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
-                        </div>
-                     </li>
+                        <li class="item">
+                            <h4 class="heading">
+                                TypeScript
+                            </h4>
+                            <div class="data w3-border w3-round w3-padding">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt
+                                deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero
+                                culpa iure dicta quis laborum animi laboriosam aperiam!
+                            </div>
+                        </li>
 
 
-                     <li class="item">
-                        <h4 class="heading">
-                         JavaScript
-                        </h4>
-                        <div class="data w3-border w3-round w3-padding">
-                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero culpa iure dicta quis laborum animi laboriosam aperiam!
-                        </div>
-                     </li>
-                  </ul>
+                        <li class="item">
+                            <h4 class="heading">
+                                JavaScript
+                            </h4>
+                            <div class="data w3-border w3-round w3-padding">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur commodi sunt
+                                deleniti voluptatem error, voluptate unde repudiandae saepe inventore explicabo et vero
+                                culpa iure dicta quis laborum animi laboriosam aperiam!
+                            </div>
+                        </li>
+                    </ul>
                 </section>
 
 
+
+                <div class="component-options">
+                    <h3>
+                        accordion Component Options
+                    </h3>
+
+                    <p>
+                        on below part you can see total Accordion Component Options
+                    </p>
+
+                    <section class="options w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                        <h4 class="w3-text-red fw-normal">
+                            @ Required Options
+                        </h4>
+                        <ul class="w3-ul">
+                            <li>
+                                <b>wrapperClass</b> : string () => accordion wrapper class
+                            </li>
+                            <li>
+                                <b>itemClass</b> : string () => accordion items class
+                            </li>
+                            <li>
+                                <b>itemDataClass</b> : string () => accordion items data wrapper class
+                            </li>
+                            <li>
+                                <b>itemHeadingClass</b> : string () => accordion Heading class
+                            </li>
+                        </ul>
+                        <h4 class="w3-text-teal fw-normal">
+                            @ Optional Options
+                        </h4>
+                        <ul class="w3-ul">
+                            <li>
+                                <b>allItemOpenable</b> : bool (true) => if set true all item can expanded if set false
+                                only one item can expanded
+                            </li>
+                            <li>
+                                <b>defaultItemOpen</b> : int () => ...
+                            </li>
+                            <li>
+                                <b>itemActiveClass</b> : string () => add a class for expanded item
+                            </li>
+                            <li>
+                                <b>icon</b> : string (arrow) => item icon (arrow | plus)
+                            </li>
+
+                        </ul>
+                    </section>
+
+                    <section class="changelog w3-container w3-border w3-round-medium w3-padding-16 w3-margin-top">
+                        <h4 class="w3-text-black fw-normal">
+                            @ Change Log
+                        </h4>
+                        <ul class="w3-ul">
+                            <li>
+                                ...
+                            </li>
+                        </ul>
+                    </section>
+                </div>
 
 
 
@@ -135,28 +252,29 @@
     <script type="module">
         import { EasyJS } from './easyjs/components/dist/easyjs.js';
         EasyJS.debug('alert');
-        EasyJS.component('accordion',{
+        EasyJS.component('accordion', {
             'wrapperClass': 'accordion-wrapper',
             'itemClass': 'item',
             'itemDataClass': 'data',
             'itemHeadingClass': 'heading',
-            'icon':'plus',
+            'icon': 'plus',
             'defaultItemOpen': 1,
-            'allItemOpenable': true
+            'allItemOpenable': true,
+            'itemActiveClass': 'active-item'
         })
 
-   import {Translate} from './assets/js/js.js';
+        import { Translate } from './assets/js/js.js';
 
-   Translate([
-      {
-        'en':'Accordion Component',
-        'fa':'کامپوننت Accordion'
-      }
-   ])
+        Translate([
+            {
+                'en': 'Accordion Component',
+                'fa': 'کامپوننت Accordion'
+            }
+        ])
 
     </script>
 
-    <script src="assets/js/js.js" type="module" ></script>
+    <script src="assets/js/js.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
 
 </body>
