@@ -514,7 +514,7 @@ EasyJS.component('indicator', {
                     </h4>
                     <ul class="w3-ul">
                         <li>
-                            <b>wrapperClass</b> : string () => indicator  wrapper class
+                            <b>wrapperClass</b> : string () => indicator wrapper class
                         </li>
                         <li>
                             <b>itemsClass</b> : string () => indicator items class
@@ -532,58 +532,66 @@ EasyJS.component('indicator', {
                                 ( both | x | y )
                             </b>
                         </li>
-                    
-                 
+
+
                         <li>
                             <b>indicatorMovingSpeed</b> : string (1s) => indicator move speed
                         </li>
                         <li>
-                            <b>indicatorMove</b> : callback(indicator,targetItem) => this callback function fired when indicator moving
+                            <b>indicatorMove</b> : callback(indicator,targetItem) => this callback function fired when
+                            indicator moving
                         </li>
                         <li>
-                            <b>indicatorStop</b> : callback(indicator,targetItem) => this callback function fired when indicator stop
+                            <b>indicatorStop</b> : callback(indicator,targetItem) => this callback function fired when
+                            indicator stop
                         </li>
                         <li>
                             <b>events</b> : array(['mousemove', 'click']) => indicator events : any js event is accepted
                         </li>
                         <li>
-                            <b>indicatorPositionMode</b> : string      (absolute) => indicator position mode <b class="w3-text-blue"> 
+                            <b>indicatorPositionMode</b> : string (absolute) => indicator position mode <b
+                                class="w3-text-blue">
                                 ( fixed | relative | static | absolute )
                             </b>
                         </li>
                         <li>
-                            <b>indicatorRatio</b> : string (center | end) => indicator Ratio 
+                            <b>indicatorRatio</b> : string (center | end) => indicator Ratio
                         </li>
                         <li>
-                            <b>indicatorYmargin</b> : string (0px) => indicator vertical margin 
+                            <b>indicatorYmargin</b> : string (0px) => indicator vertical margin
                         </li>
                         <li>
-                            <b>indicatorXmargin</b> : string (0px) => indicator horizontal margin 
+                            <b>indicatorXmargin</b> : string (0px) => indicator horizontal margin
                         </li>
                         <li>
-                            <b>cover</b> : bool (true) => if set true ,  indicator will cover with current target size
+                            <b>cover</b> : bool (true) => if set true , indicator will cover with current target size
                         </li>
                         <li>
-                            <b>eventsMaxSensitivity</b> : bool (false) => this is event sensitivity mode , if set true, any event on target elm with have max sensitivity
+                            <b>eventsMaxSensitivity</b> : bool (false) => this is event sensitivity mode , if set true,
+                            any event on target elm with have max sensitivity
                         </li>
                         <li>
-                            <b>indicatorDefaultHidden</b> : bool (false) => indicator will default hide, and when client start working with registered events indicator will showing and when client stop working with events indicator  will hidden again
+                            <b>indicatorDefaultHidden</b> : bool (false) => indicator will default hide, and when client
+                            start working with registered events indicator will showing and when client stop working
+                            with events indicator will hidden again
                         </li>
                         <li>
-                            <b>indicatorAnimationIn</b> : string () => add an animation for indicator when client work with events
+                            <b>indicatorAnimationIn</b> : string () => add an animation for indicator when client work
+                            with events
                         </li>
-                        
+
                         <li>
-                            <b>indicatorAnimationOut</b> : string () => add an animation for indicator when client stop working with events
+                            <b>indicatorAnimationOut</b> : string () => add an animation for indicator when client stop
+                            working with events
                         </li>
                         <li>
                             <b>indicatorAnimationSpeed</b> : string (1s) => indicator animation speed
                         </li>
                         <li>
-                            <b>destroyAfterEventEnded</b> : bool (false) => destroy after event is end
+                            <b>destroyAfterEventEnded</b> : bool (false) => destroy indicator after event is end
                         </li>
 
-                        
+
                     </ul>
                 </section>
 
